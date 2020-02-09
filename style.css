@@ -1,0 +1,173 @@
+body {
+  font-family: sans-serif;
+  background-color: #34495e;
+}
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+div {
+  color: white;
+  animation: fadeIn 1s linear;
+}
+ul span {
+  font-size: 23px;
+  margin-right: 5px;
+}
+button {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.finishBtn {
+  margin-right: 5px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid white;
+}
+
+.finishBtnClicked {
+  background-color: white;
+}
+.hiding {
+  display: none;
+}
+.showing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid {
+  margin-top: 20%;
+}
+.mid_greeting-column,
+.form-container_container,
+.todoForm-container_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.form-container_container {
+  margin-top: 10%;
+}
+
+.mid_clock-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.clock {
+  font-size: 130px;
+  text-align: center;
+}
+
+.mid_greeting-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.greeting,
+.greeting-userName,
+.form-asking,
+.todoForm-asking {
+  margin-left: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+.greeting-form,
+.todoList-form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.greeting-form input,
+.todoList-form input {
+  height: 30px;
+  width: 250px;
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: transparent;
+}
+input:focus {
+  outline: none;
+  color: white;
+  text-align: center;
+}
+
+.todoForm-container_container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoList-form input {
+  font-size: 20px;
+}
+.todoForm-asking {
+  font-size: 28px;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+}
+
+.spanNice {
+  font-size: 18px;
+  animation: fadeInTwo 4s linear;
+}
+
+.top-container {
+  position: absolute;
+  font-size: 25px;
+  top: 20px;
+  right: 20px;
+}
+
+.greeting-userName {
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInTwo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
